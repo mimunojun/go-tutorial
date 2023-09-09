@@ -7,7 +7,6 @@ func main() {
 	const conferenceTickets int = 50
 	var remainingTickets uint = 50
 
-	remainingTickets = -1
 	fmt.Printf("conferenceTickets is %T, remainingTickets is %T, conferenceName is %T\n", conferenceTickets, remainingTickets, conferenceName)
 
 	fmt.Printf("Hello to our %v booking application\n", conferenceName)
@@ -17,8 +16,8 @@ func main() {
 	var userName string
 	var userTickets int
 	// ask user for their name
+	fmt.Scan(&userName)
 
-	userName = "Tom"
 	userTickets = 2
 	fmt.Printf("User %v booked %v tickets.\n", userName, userTickets)
 }
