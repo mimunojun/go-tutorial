@@ -2,11 +2,13 @@ package main
 
 import "fmt"
 
+func changeFirst(slice []int) {
+	slice[0] = 1000
+}
+
 func main() {
-	var x []int = []int{3, 4}
-	y := x
-	y[0] = 100
-
-	fmt.Println(x, y)
-
+	var x []int = []int{3,4,5}
+	fmt.Println(x)
+	changeFirst(x)
+	fmt.Println(x)
 }
