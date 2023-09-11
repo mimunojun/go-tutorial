@@ -1,10 +1,11 @@
 package main
 
 import (
-	"booking-app/helper"
 	"fmt"
 	"sync"
 	"time"
+
+	"booking-app/helper"
 )
 
 const conferenceTickets int = 50
@@ -91,7 +92,6 @@ func getUserInput() (string, string, string, uint) {
 	fmt.Scan(&userTickets)
 
 	return firstName, lastName, email, userTickets
-
 }
 
 func bookTicket(userTickets uint, firstName string, lastName string, email string) {
