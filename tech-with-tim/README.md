@@ -1,4 +1,4 @@
-# findings
+# note
 ## Tuto #18 "Mutable & Immutable Data Types"
 * There's mutable (changable from other variables) and immutable (not changable)
 * Mutables are like:
